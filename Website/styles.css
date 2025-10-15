@@ -1,18 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #202C34;
+    color: #FFF;
+}
+
+.tablet-desktop {
+    display: none;
+}
 
 /* ===================================================================================================================================================================== */
 /* STYLES FOR MOBILE VIEWPORT */
 /* ========== DEFAULT: MOBILE VIEWPORT ========== */
+.mobile {
+    display: block;
+}
 
+.tablet-desktop {
+    display: none;
+}
 
 /* ======= header & navbar =========================================== */
+header {
+    background-color: #1B3271; 
+    color: #FFF;
+    text-align: center;
+    padding-top: 10px;
+    height: auto;
+    font-family: "Red Hat Display", sans-serif;
+}
+
+#logo a img {
+    display: block;
+    width: 130px;
+    height: auto;
+    margin: 0 auto 10px auto;
+    border-radius: 40%;
+}
+
+#navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar li {
+    font-weight: bold;
+    border-top: 1px solid #fff;
+}
+
+#navbar a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 0.7em 1em;
+}
 
 /* ======= main index ============================================== */
+main {
+    width: 100%;
+    margin: 20px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+.bg {
+    background-color: #100C14;
+    width: 95%;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 20px 10px;
+}
+
+h2 {
+    font-family: 'MerriWeather', serif;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #FF4FD8;
+    display: inline-block;
+}
+
+.favorites {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.favorites img {
+    width: 150px;
+    height: 190px;
+    border-radius: 5px;
+}
+
+.categories {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.categories div {
+    width: 45%;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.categories a {
+    color: #000;
+    text-decoration: none;
+}
+
+.categories div:nth-child(1) { background-color: #4A9FFF; }
+.categories div:nth-child(2) { background-color: #FFE926; }
+.categories div:nth-child(3) { background-color: #37FF25; }
+.categories div:nth-child(4) { background-color: #FF4848; }
+.categories div:nth-child(5) { background-color: #F94CFF; }
+.categories div:nth-child(6) { background-color: #6CFFEB; }
 
 /* ======= gallery ============================================== */
 
 /* ======= top picks ============================================== */
 
 /* ======= main about ============================================== */
+
+/* ======= footer ============================================== */
+footer {
+    background-color: #1B3271;
+    text-align: center;
+    padding: 15px;
+    font-size: 0.8rem;
+    margin-top: 20px;
+}
+
+footer img {
+    height: 20px;
+    margin: 5px;
+}
 
 /* ===================================================================================================================================================================== */
 /* MEDIA QUERY FOR TABLET VIEWPORT */
