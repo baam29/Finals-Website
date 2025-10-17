@@ -266,6 +266,34 @@ footer img {
 }
 
 /* ===================================================================================================================================================================== */
+/* Interactivity */
+@keyframes arrowPulse {
+    0% { transform: scale(1); }
+    25% { transform: scale(1.05); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1.2); }
+}
+
+#arrowScrollTop {
+    display: block;
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    border: none;
+    border-radius: 5px;
+    background: #4A9FFF;
+    color: white;
+    cursor: pointer;
+    padding: 6px 10px;
+    font-size: 1rem;
+}
+
+#arrowScrollTop:hover {
+    background: #ff4fd8;
+    animation: arrowPulse 2s infinite ease-in-out;
+}
+
+/* ===================================================================================================================================================================== */
 /* MEDIA QUERY FOR TABLET VIEWPORT */
 @media screen and (min-width: 630px) {
     .tablet-desktop {
@@ -429,6 +457,7 @@ footer img {
 
 /* ===================================================================================================================================================================== */
 /* MEDIA QUERY FOR DESKTOP VIEWPORT */
+@media screen and (min-width: 1015px) {
     /* ======= header & navbar =========================================== */
     header {
         background-color: #1B3271;
@@ -711,6 +740,8 @@ footer img {
         transform: scale(1);
         filter: saturate(100%) invert(100%);
     }
+
+}
     
 /* ===================================================================================================================================================================== */
 /* MEDIA QUERY FOR PRINT */
