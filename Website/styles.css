@@ -627,25 +627,230 @@ footer img {
         background-color: #FF4FD8;
     }
     /* ======= top picks ============================================== */
-    
+    .grid {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+
+    .tier-list h4 {
+        font-size: 1.5rem;
+        margin: 5px 0 20px 50px;
+        border-bottom: 2px solid #FF4FD8;
+        display: inline-block;
+    }
+
+    .tier-list img {
+        width: 150px;
+        height: 210px;
+        border-radius: 5px;
+    }
+
+    .grid img:hover {
+        transform: scale(1.05);
+    }
+
     /* ======= about ============================================== */
-    
+    .about section {
+        background-color: #565656;
+        color: #FFF;
+        border-radius: 10px;
+        padding: 20px 40px;
+        margin-bottom: 40px;
+    }
+
+    .highlight {
+        color: #FF4FD8;
+    }
+
+    .about p, .about blockquote, .about ul {
+        margin: 10px 0;
+        list-style-type: none;
+    }
+
+    .about blockquote {
+        font-style: italic;
+        line-height: 1.6;
+    }
+
+    .about blockquote::before {
+        content: open-quote;
+    }
+
+    .about blockquote::after {
+        content: close-quote;
+    }
+
+    .about a {
+        color: #FF4FD8;
+        text-decoration: none;
+    }
+
+    .about a:hover {
+        color: #4A9FFF;
+        text-decoration: underline;
+    }
+
     /* ======= footer ==================================================== */
+    footer {
+        background-color: #1b3271;
+        text-align: center;
+        padding: 20px;
+        font-size: 0.9rem;
+        margin-top: 40px;
+    }
+
+    footer img {
+        height: 25px;
+        margin: 5px;
+    }
+
+    footer img:hover {
+        transform: scale(1);
+        filter: saturate(100%) invert(100%);
+    }
     
 /* ===================================================================================================================================================================== */
 /* MEDIA QUERY FOR PRINT */
+@media print {
+    * {
+        background: none;
+        color: black;
+        box-shadow: none;
+        text-shadow: none;
+    }
+
     /* ======= header & navbar =========================================== */
-    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #logo a img {
+        padding: 0;
+        margin-left: 0;
+        width: 10vw;
+        border-radius: 40%;
+    }
+
+    #navbar ul{
+        display: flex;
+    }
+
+    .tablet-desktop {
+        display: block;
+    }
+
     /* ======= hero img ================================================== */
+    #EG img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
 
     /* ======= main index ============================================== */
-    
-    /* ======= gallery ============================================== */
+    main {
+        width: 100%;
+        text-align: left;
+    }
 
+    h2 {
+        font-family: 'MerriWeather', serif;
+        font-size: 0.99em;
+        color: #000;
+    }
+
+    .favorites {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .favorites img {
+        width: 80px;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .categories {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    /* ======= gallery ============================================== */
+    .gallery h2, .top-picks h2, .about h2 {
+        text-align: center;
+        border: none;
+        font-size: 0.99em;
+    }
+
+    .detail-page {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        border-radius: 8px;
+    }
+
+    .detail-page img {
+        width: 100px;
+        height: auto;
+        padding-right: 10px;
+    }
+
+    .synopsis h3 {
+        text-align: left;
+        font-size: 0.99em;
+    }
+
+    .synopsis ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
     /* ======= top picks ============================================== */
-    
+    .grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .bg div {
+        padding: 0;
+        margin: 0;
+    }
+
+    .tier-list h4 {
+        text-align: left;
+        padding: 0;
+        margin: 0;
+    }
+
+    .tier-list img {
+        width: 70px;
+        height: auto;
+        border-radius: 5px;
+    }
+
     /* ======= about ============================================== */
-    
+    .about blockquote {
+        font-style: italic;
+        line-height: 1.5;
+    }
+
+    .about section {
+        padding: 0;
+        margin-bottom: 0;
+    }
+
     /* ======= footer ==================================================== */
+    footer {
+        text-align: center;
+    }
+}
 
     
